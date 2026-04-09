@@ -1,0 +1,24 @@
+<RCC>
+  <qresource prefix="icones">
+    <file>apagar.png</file>
+    <file>atualizar.png</file>
+    <file>cadeado.png</file>
+    <file>config.png</file>
+    <file>editar.png</file>
+    <file>exit.png</file>
+    <file>grafico.png</file>
+    <file>img.qrc</file>
+    <file>inserir.png</file>
+    <file>manutencao.png</file>
+    <file>procurar.png</file>
+    <file>saida.png</file>
+    <file>salvar.png</file>
+    <file>security.png</file>
+    <file>security2.png</file>
+    <file>suporte.png</file>
+    <file>transferir.png</file>
+    <file>update.png</file>
+    <file>user.png</file>
+    <file>user2.png</file>
+  </qresource>
+</RCC>
