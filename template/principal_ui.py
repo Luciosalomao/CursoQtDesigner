@@ -92,6 +92,7 @@ class Ui_principal(object):
         self.tableWidget.setObjectName(u"tableWidget")
         self.tableWidget.setGeometry(QRect(20, 80, 731, 192))
         self.tableWidget.setFont(font)
+        self.tableWidget.setColumnHidden(0, True)
         principal.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(principal)
         self.menubar.setObjectName(u"menubar")
