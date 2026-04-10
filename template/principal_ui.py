@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import sys
 
 ################################################################################
 ## Form generated from reading UI file 'principal.ui'
@@ -18,9 +17,10 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QPainter, QPalette, QPixmap, QRadialGradient,
     QTransform)
 from PySide6.QtWidgets import (QApplication, QHeaderView, QLabel, QMainWindow,
-                               QMenu, QMenuBar, QSizePolicy, QStatusBar,
-                               QTableWidget, QTableWidgetItem, QToolBar, QWidget, QDialog)
-import template.principal_rc
+    QMenu, QMenuBar, QSizePolicy, QStatusBar,
+    QTableWidget, QTableWidgetItem, QToolBar, QWidget)
+
+from . import principal_rc
 
 class Ui_principal(object):
     def setupUi(self, principal):
@@ -76,7 +76,7 @@ class Ui_principal(object):
         self.label_3.setFont(font1)
         self.lbl_logado = QLabel(self.centralwidget)
         self.lbl_logado.setObjectName(u"lbl_logado")
-        self.lbl_logado.setGeometry(QRect(600, 40, 49, 16))
+        self.lbl_logado.setGeometry(QRect(600, 39, 141, 16))
         self.lbl_logado.setFont(font1)
         self.tableWidget = QTableWidget(self.centralwidget)
         if (self.tableWidget.columnCount() < 4):
@@ -92,7 +92,6 @@ class Ui_principal(object):
         self.tableWidget.setObjectName(u"tableWidget")
         self.tableWidget.setGeometry(QRect(20, 80, 731, 192))
         self.tableWidget.setFont(font)
-        self.tableWidget.setColumnHidden(0, True)
         principal.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(principal)
         self.menubar.setObjectName(u"menubar")
@@ -136,8 +135,8 @@ class Ui_principal(object):
 #endif // QT_CONFIG(shortcut)
         self.label.setText("")
         self.label_2.setText(QCoreApplication.translate("principal", u"<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:700;\">USU\u00c1RIOS CADASTRADOS</span></p></body></html>", None))
-        self.label_3.setText(QCoreApplication.translate("principal", u"<html><head/><body><p><span style=\" font-weight:700;\">Usu\u00e1rio Logado:</span></p></body></html>", None))
-        self.lbl_logado.setText(QCoreApplication.translate("principal", u"...", None))
+        self.label_3.setText(QCoreApplication.translate("principal", u"<html><head/><body><p><span style=\" font-weight:700; color:#00ff00;\">Usu\u00e1rio Logado:</span></p></body></html>", None))
+        self.lbl_logado.setText(QCoreApplication.translate("principal", u"<html><head/><body><p><span style=\" color:#00ff00;\">...</span></p></body></html>", None))
         ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("principal", u"Nome", None));
         ___qtablewidgetitem1 = self.tableWidget.horizontalHeaderItem(1)
@@ -150,18 +149,3 @@ class Ui_principal(object):
         self.toolBar.setWindowTitle(QCoreApplication.translate("principal", u"toolBar", None))
     # retranslateUi
 
-class PrincipalWindow(QMainWindow):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_principal()
-        self.ui.setupUi(self)
-
-
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    app.setStyle('Fusion')
-
-    window = PrincipalWindow()
-    window.show()
-
-    sys.exit(app.exec())

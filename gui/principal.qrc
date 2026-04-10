@@ -1,24 +1,23 @@
 <RCC>
-  <qresource prefix="icones">
-    <file>apagar.png</file>
-    <file>atualizar.png</file>
-    <file>cadeado.png</file>
-    <file>config.png</file>
-    <file>editar.png</file>
-    <file>exit.png</file>
-    <file>grafico.png</file>
-    <file>img.qrc</file>
-    <file>inserir.png</file>
-    <file>manutencao.png</file>
-    <file>procurar.png</file>
-    <file>saida.png</file>
-    <file>salvar.png</file>
-    <file>security.png</file>
-    <file>security2.png</file>
-    <file>suporte.png</file>
-    <file>transferir.png</file>
-    <file>update.png</file>
-    <file>user.png</file>
-    <file>user2.png</file>
+  <qresource>
+    <file>../icones/apagar.png</file>
+    <file>../icones/atualizar.png</file>
+    <file>../icones/cadeado.png</file>
+    <file>../icones/config.png</file>
+    <file>../icones/editar.png</file>
+    <file>../icones/exit.png</file>
+    <file>../icones/grafico.png</file>
+    <file>../icones/inserir.png</file>
+    <file>../icones/manutencao.png</file>
+    <file>../icones/procurar.png</file>
+    <file>../icones/saida.png</file>
+    <file>../icones/salvar.png</file>
+    <file>../icones/security.png</file>
+    <file>../icones/security2.png</file>
+    <file>../icones/suporte.png</file>
+    <file>../icones/transferir.png</file>
+    <file>../icones/update.png</file>
+    <file>../icones/user.png</file>
+    <file>../icones/user2.png</file>
   </qresource>
 </RCC>

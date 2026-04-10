@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import sys
 
 ################################################################################
 ## Form generated from reading UI file 'cadastro.ui'
@@ -23,7 +22,7 @@ class Ui_cadastro(object):
     def setupUi(self, cadastro):
         if not cadastro.objectName():
             cadastro.setObjectName(u"cadastro")
-        cadastro.resize(518, 284)
+        cadastro.resize(518, 283)
         self.label = QLabel(cadastro)
         self.label.setObjectName(u"label")
         self.label.setGeometry(QRect(10, 10, 501, 31))
@@ -105,18 +104,3 @@ class Ui_cadastro(object):
         self.btn_limpar.setText(QCoreApplication.translate("cadastro", u"Limpar", None))
     # retranslateUi
 
-class CadastroWindow(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_cadastro()
-        self.ui.setupUi(self)
-
-
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    app.setStyle('Fusion')
-
-    window = CadastroWindow()
-    window.show()
-
-    sys.exit(app.exec())

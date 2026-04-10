@@ -17,7 +17,9 @@ class principal(QMainWindow):
         self.ui.actionRefresh.triggered.connect(self.carregar_dados)
         self.ui.actionProcurar.triggered.connect(self.pesquisar_funcionario)
         if usuario_logado:
-            self.ui.lbl_logado.setText(f"{usuario_logado}")
+            self.ui.lbl_logado.setText(
+                f'<html><head/><body><p><span style=" color:#00ff00; font-weight:700;">{usuario_logado}</span></p></body></html>'
+            )
         else:
             self.ui.lbl_logado.setText("Não logado")
         self.carregar_dados()

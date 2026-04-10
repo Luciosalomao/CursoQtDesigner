@@ -71,15 +71,15 @@ border-color: rgb(66, 66, 66);</string>
      </font>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Usuário Logado:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700; color:#00ff00;&quot;&gt;Usuário Logado:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_logado">
     <property name="geometry">
      <rect>
       <x>600</x>
-      <y>40</y>
-      <width>49</width>
+      <y>39</y>
+      <width>141</width>
       <height>16</height>
      </rect>
     </property>
@@ -89,7 +89,7 @@ border-color: rgb(66, 66, 66);</string>
      </font>
     </property>
     <property name="text">
-     <string>...</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00ff00;&quot;&gt;...&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QTableWidget" name="tableWidget">
@@ -169,7 +169,7 @@ border-color: rgb(66, 66, 66);</string>
   </widget>
   <action name="actionProcurar">
    <property name="icon">
-    <iconset resource="principal.qrc">
+    <iconset>
      <normaloff>:/icones/procurar.png</normaloff>:/icones/procurar.png</iconset>
    </property>
    <property name="text">
@@ -178,7 +178,7 @@ border-color: rgb(66, 66, 66);</string>
   </action>
   <action name="actionCadastrar">
    <property name="icon">
-    <iconset resource="principal.qrc">
+    <iconset>
      <normaloff>:/icones/inserir.png</normaloff>:/icones/inserir.png</iconset>
    </property>
    <property name="text">
@@ -187,7 +187,7 @@ border-color: rgb(66, 66, 66);</string>
   </action>
   <action name="actionApagar">
    <property name="icon">
-    <iconset resource="principal.qrc">
+    <iconset>
      <normaloff>:/icones/apagar.png</normaloff>:/icones/apagar.png</iconset>
    </property>
    <property name="text">
@@ -196,7 +196,7 @@ border-color: rgb(66, 66, 66);</string>
   </action>
   <action name="actionAtualizar">
    <property name="icon">
-    <iconset resource="principal.qrc">
+    <iconset>
      <normaloff>:/icones/editar.png</normaloff>:/icones/editar.png</iconset>
    </property>
    <property name="text">
@@ -205,7 +205,7 @@ border-color: rgb(66, 66, 66);</string>
   </action>
   <action name="actionRefresh">
    <property name="icon">
-    <iconset resource="principal.qrc">
+    <iconset>
      <normaloff>:/icones/update.png</normaloff>:/icones/update.png</iconset>
    </property>
    <property name="text">
