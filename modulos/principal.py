@@ -1,4 +1,6 @@
 from PySide6.QtWidgets import QMainWindow, QTableWidgetItem, QMessageBox, QDialog, QFormLayout, QLineEdit, QPushButton
+
+from modulos.pesquisar_funcionario import PesquisarFuncionario
 from template.principal_ui import Ui_principal
 from modulos.cadastro import Cadastro
 from db.query import sqlite_db
@@ -12,11 +14,17 @@ class principal(QMainWindow):
         self.ui.actionCadastrar.triggered.connect(self.inserir)
         self.ui.actionApagar.triggered.connect(self.apagar_registro)
         self.ui.actionAtualizar.triggered.connect(self.atualizar_registro)
+        self.ui.actionRefresh.triggered.connect(self.carregar_dados)
+        self.ui.actionProcurar.triggered.connect(self.pesquisar_funcionario)
         if usuario_logado:
             self.ui.lbl_logado.setText(f"{usuario_logado}")
         else:
             self.ui.lbl_logado.setText("Não logado")
         self.carregar_dados()
+
+    def pesquisar_funcionario(self):
+        pesquisar_dialog = PesquisarFuncionario(self)
+        pesquisar_dialog.exec_()
 
     def inserir(self):
         inserir = Cadastro()
