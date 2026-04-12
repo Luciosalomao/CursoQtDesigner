@@ -1,8 +1,11 @@
+from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QDialog
 from template.editar_ui import Ui_editar
 class Editar(QDialog):
     def __init__(self, dados_funcionario, parent=None):
         super(Editar, self).__init__(parent)
+        icon = QIcon("icones/security2.png")
+        self.setWindowIcon(icon)
         self.ui = Ui_editar()
         self.ui.setupUi(self)
 

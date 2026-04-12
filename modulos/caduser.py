@@ -1,4 +1,6 @@
 import hashlib
+
+from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QDialog, QMessageBox
 from template.caduser_ui import Ui_frmCadastroUsuario
 from db.query import sqlite_db
@@ -7,6 +9,8 @@ from db.query import sqlite_db
 class CadUser(QDialog):
     def __init__(self, *args, **kwargs):
         super(CadUser, self).__init__(*args, **kwargs)
+        icon = QIcon("icones/security2.png")
+        self.setWindowIcon(icon)
         self.ui = Ui_frmCadastroUsuario()
         self.ui.setupUi(self)
         self.ui.btmCadastrar.clicked.connect(self.inserir)

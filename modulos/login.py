@@ -1,4 +1,6 @@
 import hashlib
+
+from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QDialog, QMessageBox
 from template.login_ui import Ui_login
 from db.query import sqlite_db
@@ -8,6 +10,8 @@ from modulos.principal import principal
 class Login(QDialog):
     def __init__(self, *args, **kwargs):
         super(Login, self).__init__(*args, **kwargs)
+        icon = QIcon("icones/security2.png")
+        self.setWindowIcon(icon)
         self.ui = Ui_login()
         self.ui.setupUi(self)
         self.ui.btn_entrar.clicked.connect(self.login)
