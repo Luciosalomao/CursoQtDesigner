@@ -152,10 +152,7 @@ border-color: rgb(66, 66, 66);</string>
     <property name="title">
      <string>Usuário</string>
     </property>
-    <addaction name="actionCadastrar_user"/>
-    <addaction name="actionApagar_user"/>
-    <addaction name="actionAtualizar_user"/>
-    <addaction name="actionRefresh_user"/>
+    <addaction name="actionGerenciar_user"/>
    </widget>
    <addaction name="menuArquivo"/>
    <addaction name="menuUsu_rio"/>
@@ -225,13 +222,13 @@ border-color: rgb(66, 66, 66);</string>
     <string>F5</string>
    </property>
   </action>
-  <action name="actionCadastrar_user">
+  <action name="actionGerenciar_user">
    <property name="icon">
     <iconset resource="principal.qrc">
-     <normaloff>:/icones/inserir.png</normaloff>:/icones/inserir.png</iconset>
+     <normaloff>:/icones/user.png</normaloff>:/icones/user.png</iconset>
    </property>
    <property name="text">
-    <string>Cadastrar</string>
+    <string>Gerenciar</string>
    </property>
   </action>
   <action name="actionApagar_user">
