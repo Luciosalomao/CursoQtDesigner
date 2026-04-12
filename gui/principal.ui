@@ -148,7 +148,17 @@ border-color: rgb(66, 66, 66);</string>
     <addaction name="actionAtualizar"/>
     <addaction name="actionRefresh"/>
    </widget>
+   <widget class="QMenu" name="menuUsu_rio">
+    <property name="title">
+     <string>Usuário</string>
+    </property>
+    <addaction name="actionCadastrar_user"/>
+    <addaction name="actionApagar_user"/>
+    <addaction name="actionAtualizar_user"/>
+    <addaction name="actionRefresh_user"/>
+   </widget>
    <addaction name="menuArquivo"/>
+   <addaction name="menuUsu_rio"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
@@ -169,7 +179,7 @@ border-color: rgb(66, 66, 66);</string>
   </widget>
   <action name="actionProcurar">
    <property name="icon">
-    <iconset>
+    <iconset resource="principal.qrc">
      <normaloff>:/icones/procurar.png</normaloff>:/icones/procurar.png</iconset>
    </property>
    <property name="text">
@@ -178,7 +188,7 @@ border-color: rgb(66, 66, 66);</string>
   </action>
   <action name="actionCadastrar">
    <property name="icon">
-    <iconset>
+    <iconset resource="principal.qrc">
      <normaloff>:/icones/inserir.png</normaloff>:/icones/inserir.png</iconset>
    </property>
    <property name="text">
@@ -187,7 +197,7 @@ border-color: rgb(66, 66, 66);</string>
   </action>
   <action name="actionApagar">
    <property name="icon">
-    <iconset>
+    <iconset resource="principal.qrc">
      <normaloff>:/icones/apagar.png</normaloff>:/icones/apagar.png</iconset>
    </property>
    <property name="text">
@@ -196,7 +206,7 @@ border-color: rgb(66, 66, 66);</string>
   </action>
   <action name="actionAtualizar">
    <property name="icon">
-    <iconset>
+    <iconset resource="principal.qrc">
      <normaloff>:/icones/editar.png</normaloff>:/icones/editar.png</iconset>
    </property>
    <property name="text">
@@ -205,7 +215,7 @@ border-color: rgb(66, 66, 66);</string>
   </action>
   <action name="actionRefresh">
    <property name="icon">
-    <iconset>
+    <iconset resource="principal.qrc">
      <normaloff>:/icones/update.png</normaloff>:/icones/update.png</iconset>
    </property>
    <property name="text">
@@ -213,6 +223,42 @@ border-color: rgb(66, 66, 66);</string>
    </property>
    <property name="shortcut">
     <string>F5</string>
+   </property>
+  </action>
+  <action name="actionCadastrar_user">
+   <property name="icon">
+    <iconset resource="principal.qrc">
+     <normaloff>:/icones/inserir.png</normaloff>:/icones/inserir.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cadastrar</string>
+   </property>
+  </action>
+  <action name="actionApagar_user">
+   <property name="icon">
+    <iconset resource="principal.qrc">
+     <normaloff>:/icones/apagar.png</normaloff>:/icones/apagar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Apagar</string>
+   </property>
+  </action>
+  <action name="actionAtualizar_user">
+   <property name="icon">
+    <iconset resource="principal.qrc">
+     <normaloff>:/icones/editar.png</normaloff>:/icones/editar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Atualizar</string>
+   </property>
+  </action>
+  <action name="actionRefresh_user">
+   <property name="icon">
+    <iconset resource="principal.qrc">
+     <normaloff>:/icones/update.png</normaloff>:/icones/update.png</iconset>
+   </property>
+   <property name="text">
+    <string>Refresh</string>
    </property>
   </action>
  </widget>

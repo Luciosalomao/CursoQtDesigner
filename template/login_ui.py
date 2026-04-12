@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import sys
 
 ################################################################################
 ## Form generated from reading UI file 'login.ui'
@@ -18,8 +17,6 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QDialog, QLabel, QLineEdit,
     QPushButton, QSizePolicy, QWidget)
-
-
 class Ui_login(object):
     def setupUi(self, login):
         if not login.objectName():
@@ -81,21 +78,3 @@ class Ui_login(object):
         self.btn_sair.setText(QCoreApplication.translate("login", u"Sair", None))
     # retranslateUi
 
-
-# ... (seu código gerado) ...
-
-class LoginWindow(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_login()
-        self.ui.setupUi(self)
-
-
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    app.setStyle('Fusion')
-
-    window = LoginWindow()
-    window.show()
-
-    sys.exit(app.exec())

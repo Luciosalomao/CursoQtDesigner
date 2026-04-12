@@ -175,8 +175,5 @@
    </property>
   </widget>
  </widget>
- <resources>
-  <include location="../icones/img.qrc"/>
- </resources>
  <connections/>
 </ui>

@@ -5,6 +5,7 @@ from template.principal_ui import Ui_principal
 from modulos.cadastro import Cadastro
 from db.query import sqlite_db
 from modulos.editar import Editar
+from modulos.caduser import CadUser
 
 class principal(QMainWindow):
     def __init__(self, usuario_logado=None, *args, **kwargs):
@@ -16,6 +17,7 @@ class principal(QMainWindow):
         self.ui.actionAtualizar.triggered.connect(self.atualizar_registro)
         self.ui.actionRefresh.triggered.connect(self.carregar_dados)
         self.ui.actionProcurar.triggered.connect(self.pesquisar_funcionario)
+        self.ui.actionCadastrar_user.triggered.connect(self.caduser)
         if usuario_logado:
             self.ui.lbl_logado.setText(
                 f'<html><head/><body><p><span style=" color:#00ff00; font-weight:700;">{usuario_logado}</span></p></body></html>'
@@ -116,3 +118,7 @@ class principal(QMainWindow):
                 self.carregar_dados()  # Recarrega a tabela
             else:
                 QMessageBox.critical(self, "Erro", "Erro ao atualizar o registro!")
+
+    def caduser(self):
+        caduser = CadUser()
+        caduser.exec_()
