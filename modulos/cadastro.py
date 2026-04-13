@@ -21,20 +21,39 @@ class Cadastro(QDialog):
         pro = self.ui.lineEdit_3.text().strip()
         doc = self.ui.lineEdit_4.text().strip()
 
+        if not nom:
+            QMessageBox.warning(self, "Aviso", "Digite o nome do funcionario!")
+            self.ui.lineEdit.setFocus()
+            return
+
         db = sqlite_db()
+
+        campos_funcionarios = {
+            'id': 'INTEGER PRIMARY KEY AUTOINCREMENT',
+            'nome': 'TEXT NOT NULL',
+            'endereco': 'TEXT',
+            'profissao': 'TEXT',
+            'documento': 'TEXT',
+            'admin': 'INTEGER DEFAULT 0'
+        }
+
+        db.criar_tabela('funcionarios', campos_funcionarios)
 
         dados = {
             'nome': nom,
             'endereco': end,
             'profissao': pro,
             'documento': doc,
-            'admin': 1
+            'admin': 0
         }
 
         resultado = db.insert("funcionarios", dados)
 
         if resultado:
             QMessageBox.information(self, "Sucesso", "Dados gravados com sucesso!")
+            self.limpar()
+        else:
+            QMessageBox.warning(self, "Erro", "Falha ao gravar os dados!\nVerifique se o documento ja existe.")
 
         db.close()
 
