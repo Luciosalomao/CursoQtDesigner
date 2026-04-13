@@ -10,7 +10,7 @@ from modulos.principal import principal
 class Login(QDialog):
     def __init__(self, *args, **kwargs):
         super(Login, self).__init__(*args, **kwargs)
-        icon = QIcon("icones/security2.png")
+        icon = QIcon("icones/security2.ico")
         self.setWindowIcon(icon)
         self.ui = Ui_login()
         self.ui.setupUi(self)

@@ -4,7 +4,7 @@ from template.editar_ui import Ui_editar
 class Editar(QDialog):
     def __init__(self, dados_funcionario, parent=None):
         super(Editar, self).__init__(parent)
-        icon = QIcon("icones/security2.png")
+        icon = QIcon("icones/security2.ico")
         self.setWindowIcon(icon)
         self.ui = Ui_editar()
         self.ui.setupUi(self)

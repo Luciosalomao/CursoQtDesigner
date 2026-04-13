@@ -11,7 +11,7 @@ from modulos.caduser import CadUser
 class principal(QMainWindow):
     def __init__(self, usuario_logado=None, *args, **kwargs):
         super(principal, self).__init__(*args, **kwargs)
-        icon = QIcon("icones/security2.png")
+        icon = QIcon("icones/security2.ico")
         self.setWindowIcon(icon)
         self.ui = Ui_principal()
         self.ui.setupUi(self)

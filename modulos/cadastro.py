@@ -7,7 +7,7 @@ from db.query import sqlite_db
 class Cadastro(QDialog):
     def __init__(self, *args, **kwargs):
         super(Cadastro, self).__init__(*args, **kwargs)
-        icon = QIcon("icones/security2.png")
+        icon = QIcon("icones/security2.ico")
         self.setWindowIcon(icon)
         self.ui = Ui_cadastro()
         self.ui.setupUi(self)
