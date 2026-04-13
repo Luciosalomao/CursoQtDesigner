@@ -1,14 +1,18 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+*$py.class
 *.so
 .Python
+
+# Virtual environments
 .env
 .venv/
 venv/
 ENV/
+env/
 
-# PyInstaller (ADICIONAR ESTAS LINHAS)
+# PyInstaller
 dist/
 build/
 *.spec
@@ -18,33 +22,60 @@ build/
 .idea/
 *.swp
 *.swo
+*~
+.project
+.pydevproject
 
 # Database
 *.db
 *.sqlite
 *.sqlite3
 
-# Qt
+# Qt Designer
 *.ui~
+*.pyc
 
-# OS
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+Desktop.ini
 
 # Logs
 *.log
 
-# Arquivos temporários
+# Temporary files
 *.tmp
 *.temp
 *.bak
 *.backup
 
-# Executáveis (caso estejam na raiz)
+# Executables
 *.exe
 *.msi
 *.dll
+*.pyd
 
-# Arquivos de projeto (opcional)
+# Project files
 *.user
 *.suo
+*.sln
+*.csproj
+
+# Coverage files
+.coverage
+.coverage.*
+.coveragerc
+htmlcov/
+
+# pytest
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
