@@ -8,6 +8,11 @@ __pycache__/
 venv/
 ENV/
 
+# PyInstaller (ADICIONAR ESTAS LINHAS)
+dist/
+build/
+*.spec
+
 # IDE
 .vscode/
 .idea/
@@ -28,3 +33,18 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Executáveis (caso estejam na raiz)
+*.exe
+*.msi
+*.dll
+
+# Arquivos de projeto (opcional)
+*.user
+*.suo
